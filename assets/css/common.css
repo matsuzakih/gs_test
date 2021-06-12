@@ -1,0 +1,122 @@
+@charset "UTF-8";
+
+
+/* 共通
+-------------------------- */
+:root{
+  --background: #efefef;
+  --black: #333;
+}
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin:0;
+  padding:0;
+  line-height: 1em;
+}
+body {
+  font-family:"游ゴシック体",YuGothic,"游ゴシック",'Yu Gothic',"游ゴシック Medium","Yu Gothic Medium",'メイリオ', Meiryo,'Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN','ＭＳ Ｐゴシック','MS PGothic',sans-serif;
+  font-weight:500;
+  font-feature-settings: "palt";
+  color: var(--black);
+  text-align: center;
+  font-variant-ligatures: none;
+}
+ul,li{
+  font-size: 0;
+  list-style: none;
+}
+a{
+  display: block;
+  width:100%;
+  height:100%;
+  text-decoration: none;
+  color: var(--black);
+}
+img{
+  max-width: 100%;
+  height:auto;
+  vertical-align: bottom;
+}
+hr .border{
+  border: 1px solid var(--black);
+}
+.roboto{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+.flex{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+/* pager
+-------------------------- */
+.pager .pagination {
+  text-align: center;
+}
+.pager .pagination li {
+  margin: 0 5px;
+  padding: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  position: relative;
+}
+.pager .pagination li a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:table;
+  color: #000;
+  border: 1px solid #9fa0a0;
+  border-radius: 2px;
+}
+.page-roboto{
+  font-size: 1.3rem;
+  color: var(--background);
+  font-weight: 400;
+}
+.pager .pagination li a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 2px;
+}
+
+/* footer
+-------------------------- */
+footer{
+  width: 100%;
+  margin: 30px 0;
+}
+footer p{
+  font-size: 0.9rem;
+  letter-spacing: 0.06em;
+}
+
+/* トップに戻るボタン
+-------------------------- */
+.top-btn{
+  position: absolute;
+  right: 10px;
+  bottom: -12px;
+}
+.top-btn a img{
+  display: block;
+  width: 100%;
+  height: auto;
+}

@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+@import url("common.css");
+@import url("nav.css");
+
+
+/* = SP ================================================ */
+
+  /* artists
+  -------------------------- */
+  .a-wrapper{
+    width: 89.25%;
+    margin: 0 auto;
+  }
+  .artists-area{
+    margin-top: 104px;
+    margin-bottom: 25px;
+    padding: 0 3.375%;
+  }
+  .artist{
+    width: 45%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    margin-bottom: 15px;
+  }
+  .artist img{
+    padding: 10px;
+    background: var(--background);
+    margin-bottom: 8px;
+  }
+  .a-name{
+    font-size: 1.2rem;
+    letter-spacing: 0.1em;
+  }
+
+  /* news
+  -------------------------- */
+  .n-wrapper{
+    margin: 0 auto;
+    padding: 0 10.625%;
+  }
+  .news{
+    position: relative;
+    background: var(--background);
+    padding: 0 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .whatsnew{
+    position: absolute;
+    display: block;
+    top: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .n-content{
+    width: 100%;
+    padding: 28px 0;
+  }
+  .n-t-group{
+    margin-bottom: 20px;
+  }
+  .n-title{
+    flex: 1;
+    text-align: left;
+  }
+  .n-time{
+    display: block;
+    font-size: 1.2rem;
+    letter-spacing: 0.04em;
+    margin-bottom: 6px;
+  }
+  .title span{
+    display: block;
+    font-size: 1.6rem;
+    line-height: 1.25;
+  }
+  .a-img{
+    max-width: 58px;
+    margin-left: 10px;
+  }
+  .n-disc{
+    font-size: 1.4rem;
+    color: var(--black);
+    opacity: .8;
+    text-align: justify;
+    word-break: break-all;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .n-disc span,.n-disc a{
+    display: block;
+    line-height: 1.5;
+  }
+
+
+/* ===================================================== */
+
+/* = TAB ================================================ */
+
+@media screen and (min-width:600px) {
+
+  /* artists
+  -------------------------- */
+  .artist{
+    width: 28.325%;
+  }
+
+}
+
+/* ===================================================== */
+
+/* = PC ================================================ */
+
+@media screen and (min-width:980px) {
+
+  /* artists
+  -------------------------- */
+  .a-wrapper{
+    width: 100%;
+    margin-top: 116px;
+    margin-bottom: 35px;
+  }
+  .artists-area{
+    max-width: 980px;
+    padding: 0 48px;
+    margin: 0 auto;
+  }
+  .artist{
+    width: 193px;
+    margin-left: 14px;
+    margin-right: 14px;
+    margin-bottom: 28px;
+  }
+  .artist:hover{
+    opacity: .45;
+    transition: .5s;
+  }
+  .artist img{
+    margin-bottom: 12px;
+  }
+  .a-name{
+    font-size: 1.5rem;
+  }
+
+  /* news
+  -------------------------- */
+  .n-wrapper{
+    width: 100%;
+    max-width: 980px;
+    padding: 0 62px;
+    margin: 0 auto;
+  }
+  .news{
+    padding: 0 48px;
+    margin-top: 40px;
+  }
+  .n-content{
+    width: 100%;
+    padding: 48px 0;
+  }
+  .n-t-group{
+    margin-bottom: 22px;
+  }
+  .n-time{
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .title span{
+    font-size: 2rem;
+    line-height: 1.375;
+  }
+  .a-img{
+    max-width: 80px;
+  }
+  .n-disc{
+    font-size: 1.6rem;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 22px;
+  }
+  .n-disc span,.n-disc a{
+    display: block;
+    line-height: 1.6;
+  }
+
+}
+
+/* ===================================================== */

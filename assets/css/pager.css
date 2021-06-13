@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+/* pager
+-------------------------- */
+.pager .pagination {
+  text-align: center;
+}
+.pager .pagination li {
+  margin: 0 5px;
+  padding: 0;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  position: relative;
+}
+.pager .pagination li a{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display:table;
+  border: 1px solid #9fa0a0;
+  border-radius: 2px;
+}
+.roboto-r{
+  font-size: 1.3rem;
+  color: #9fa0a0;
+  font-weight: 400;
+}
+.pager .pagination li a span{
+  display:table-cell;
+  vertical-align:middle;
+}
+.pager .pagination li a:hover,
+.pager .pagination li a.active{
+  color: #fff;
+  background: #000;
+  border: 1px solid #000;
+  border-radius: 2px;
+  transition: .5s;
+}
+.pre,.next {
+  position: relative;
+}
+.pre .active,.next .active {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+.pre:hover .active,.next:hover .active {
+  opacity: 1;
+}
+
+/* = PC ================================================ */
+
+@media screen and (min-width:980px) {
+
+  .pager .pagination li {
+    width: 36px;
+    height: 36px;
+  }
+  .pager .pagination li a{
+    border-radius: 3px;
+  }
+  .pager .pagination li a:hover,
+  .pager .pagination li a.active{
+    border-radius: 3px;
+  }
+  .roboto-r{
+    font-size: 1.5rem;
+  }
+
+}
+
+/* ===================================================== */

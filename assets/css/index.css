@@ -2,6 +2,7 @@
 
 @import url("common.css");
 @import url("nav.css");
+@import url("pager.css");
 
 
 /* = SP ================================================ */
@@ -13,7 +14,7 @@
     margin: 0 auto;
   }
   .artists-area{
-    margin-top: 104px;
+    margin-top: 100px;
     margin-bottom: 25px;
     padding: 0 3.375%;
   }

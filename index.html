@@ -86,7 +86,12 @@
     <hr class="border">
 
     <div class="news">
-      <div class="whatsnew"><img src="./assets/images/top/new.svg" alt=""></div>
+      <div class="whatsnew">
+        <picture>
+          <source media="(min-width:980px)" srcset="./assets/images/top/new_pc.svg">
+          <img src="./assets/images/top/new_sp.svg" alt="">
+        </picture>
+      </div>
       <ul>
         <li class="n-content">
           <div class="n-t-group flex">
@@ -149,17 +154,22 @@
         </li>
       </ul>
       <div class="top-btn"><!-- 戻るボタン -->
-        <a href="#header"><img src="./assets/images/btn_top.png" alt="トップへ戻る"></a>
+        <a href="#header">
+          <picture>
+            <source media="(min-width:980px)" srcset="./assets/images/btn_top_pc.svg">
+            <img src="./assets/images/btn_top_sp.svg" alt="トップへ戻る">
+          </picture>
+        </a>
       </div>
     </div><!-- news -->
 
     <div class="pager">
       <ul class="pagination">
-        <li class="pre"><a href="#"><span><img src="./assets/images/a_L.png" alt=""></span></a></li>
+        <li class="pre"><a href="#"><span><img src="./assets/images/a_L.svg" alt=""><img src="./assets/images/a_L_w.svg" class="active" alt=""></span></a></li>
         <li><a href="#" class="active roboto roboto-r"><span>1</span></a></li>
         <li><a href="#" class="roboto roboto-r"><span>2</span></a></li>
         <li><a href="#" class="roboto roboto-r"><span>3</span></a></li>
-        <li class="next"><a href="#"><span><img src="./assets/images/a_R.png" alt=""></span></a></li>
+        <li class="next"><a href="#"><span><img src="./assets/images/a_R.svg" alt=""><img src="./assets/images/a_R_w.svg" class="active" alt=""></span></a></li>
       </ul>
     </div>
 

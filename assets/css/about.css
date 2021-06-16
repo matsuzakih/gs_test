@@ -1,0 +1,73 @@
+@charset "UTF-8";
+
+@import url("common.css");
+@import url("nav.css");
+
+/* = SP ================================================ */
+
+  /* about
+  -------------------------- */
+  .gray-area{
+    position: relative;
+    background: var(--background);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .n-content{
+    width: 100%;
+    padding: 28px 0;
+  }
+  .n-disc{
+    font-size: 1.4rem;
+    color: var(--black);
+    word-break: break-all;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .n-disc span,.n-disc a{
+    display: block;
+    line-height: 1.5;
+  }
+  .disc-r{
+    letter-spacing: 0.05em;
+  }
+
+
+/* ===================================================== */
+
+/* = PC ================================================ */
+
+@media screen and (min-width:980px) {
+
+  /* news
+  -------------------------- */
+  .gray-area{
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-top: 130px;
+  }
+  .n-content{
+    width: 100%;
+    padding: 48px 0;
+  }
+  .n-disc{
+    font-size: 1.6rem;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 22px;
+  }
+  .n-disc span,.n-disc a{
+    line-height: 1.6;
+  }
+  .pc-none{
+    display: none;
+  }
+
+}
+
+/* ===================================================== */

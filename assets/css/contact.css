@@ -1,0 +1,131 @@
+@charset "UTF-8";
+
+@import url("common.css");
+@import url("nav.css");
+
+/* = SP ================================================ */
+
+  .gray-area{
+    position: relative;
+    background: var(--background);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 100px;
+    margin-bottom: 30px;
+  }
+  .n-content{
+    width: 100%;
+    padding: 28px 0;
+  }
+  .n-disc,.form-label{
+    font-size: 1.4rem;
+    line-height: 1.5;
+    color: var(--black);
+    word-break: break-all;
+  }
+  .form-label{
+    display: block;
+    margin-bottom: 5px;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .n-disc span,.form-label span{
+    color: #e4007f;
+  }
+  .disc-r{
+    letter-spacing: 0.05em;
+  }
+  .form{
+    padding-bottom: 10px;
+    text-align: left;
+  }
+  .form-row{
+    margin-bottom: 20px;
+  }
+  .form-content{
+    width: 100%;
+    height: auto;
+  }
+  input,textarea{
+    width: 100%;
+    font-size: 1.4rem;
+    padding: 10px;
+    background: #fff;
+  }
+  textarea{
+    min-height: 160px;
+  }
+  .form-row-center input{
+    width: 100%;
+    height: 38px;
+    border: 1px solid var(--black);
+  }
+
+/* ===================================================== */
+
+/* = TAB ================================================ */
+
+@media screen and (min-width:600px) {
+
+  .gray-area{
+    padding-left: 34px;
+    padding-right: 34px;
+  }
+
+}
+
+/* ===================================================== */
+
+/* = PC ================================================ */
+
+@media screen and (min-width:980px) {
+
+  .gray-area{
+    padding-left: 48px;
+    padding-right: 48px;
+    margin-top: 130px;
+  }
+  .form-row{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 32px;
+  }
+  .form-content{
+    width: 76%;
+    height: auto;
+  }
+  .form-label{
+    margin: auto 0;
+  }
+  .n-content{
+    width: 100%;
+    padding: 48px 0;
+  }
+  .n-disc,.form-label{
+    font-size: 1.6rem;
+    line-height: 1.6;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 22px;
+  }
+  input,textarea{
+    font-size: 1.6rem;
+    padding: 16px;
+  }
+  .form-row-center input{
+    width: 500px;
+    height: 50px;
+    margin: 0 auto;
+  }
+  .pc-none{
+    display: none;
+  }
+
+}
+
+/* ===================================================== */

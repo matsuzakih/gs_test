@@ -54,6 +54,17 @@ hr .border{
   flex-direction: row;
   flex-wrap: wrap;
 }
+.mini-index{
+  position: absolute;
+  display: block;
+  top: -8px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.n-wrapper{
+  margin: 0 auto;
+  padding: 0 10.625%;
+}
 
 
 /* footer
@@ -79,8 +90,18 @@ footer p{
   width: 100%;
   height: auto;
 }
+
 @media screen and (min-width:980px) {
 
+  .mini-index{
+    top: -15px;
+  }
+  .n-wrapper{
+    width: 100%;
+    max-width: 980px;
+    padding: 0 62px;
+    margin: 0 auto;
+  }
   .top-btn{
     right: 20px;
     bottom: -18px;

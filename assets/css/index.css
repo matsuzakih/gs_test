@@ -36,23 +36,12 @@
 
   /* news
   -------------------------- */
-  .n-wrapper{
-    margin: 0 auto;
-    padding: 0 10.625%;
-  }
-  .news{
+  .gray-area{
     position: relative;
     background: var(--background);
     padding: 0 20px;
     margin-top: 20px;
     margin-bottom: 30px;
-  }
-  .whatsnew{
-    position: absolute;
-    display: block;
-    top: -8px;
-    left: 50%;
-    transform: translateX(-50%);
   }
   .n-content{
     width: 100%;
@@ -147,16 +136,7 @@
 
   /* news
   -------------------------- */
-  .n-wrapper{
-    width: 100%;
-    max-width: 980px;
-    padding: 0 62px;
-    margin: 0 auto;
-  }
-  .whatsnew{
-    top: -15px;
-  }
-  .news{
+  .gray-area{
     padding: 0 48px;
     margin-top: 40px;
   }
@@ -185,7 +165,6 @@
     margin-bottom: 22px;
   }
   .n-disc span,.n-disc a{
-    display: block;
     line-height: 1.6;
   }
 

@@ -2,6 +2,8 @@
 
 @import url("common.css");
 @import url("nav.css");
+@import url("pager.css");
+
 
 /* = SP ================================================ */
 
@@ -21,9 +23,33 @@
   width: 100%;
   padding: 28px 0;
 }
+.n-t-group{
+  margin-bottom: 20px;
+}
+.n-title{
+  flex: 1;
+  text-align: left;
+}
+.n-time{
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.title span{
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+.a-img{
+  max-width: 58px;
+  margin-left: 10px;
+}
 .n-disc{
   font-size: 1.4rem;
   color: var(--black);
+  opacity: .8;
+  text-align: justify;
   word-break: break-all;
 }
 .n-disc:not(:last-child){
@@ -33,10 +59,22 @@
   display: block;
   line-height: 1.5;
 }
-.disc-r{
-  letter-spacing: 0.05em;
-}
 
+
+/* ===================================================== */
+
+/* = TAB ================================================ */
+
+@media screen and (min-width:600px) {
+
+  .gray-area{
+    padding: 0 34px;
+  }
+  .n-content{
+    padding: 38px 0;
+  }
+
+}
 
 /* ===================================================== */
 
@@ -48,12 +86,25 @@
     margin-top: 130px;
   }
   .gray-area{
-    padding-left: 48px;
-    padding-right: 48px;
+    padding: 0 48px;
   }
   .n-content{
     width: 100%;
     padding: 48px 0;
+  }
+  .n-t-group{
+    margin-bottom: 22px;
+  }
+  .n-time{
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .title span{
+    font-size: 2rem;
+    line-height: 1.375;
+  }
+  .a-img{
+    max-width: 80px;
   }
   .n-disc{
     font-size: 1.6rem;
@@ -63,9 +114,6 @@
   }
   .n-disc span,.n-disc a{
     line-height: 1.6;
-  }
-  .pc-none{
-    display: none;
   }
 
 }

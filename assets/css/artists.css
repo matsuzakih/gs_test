@@ -1,0 +1,424 @@
+@charset "UTF-8";
+
+@import url("common.css");
+@import url("nav.css");
+@import url("pager.css");
+
+
+/* = SP ================================================ */
+
+/* artists
+-------------------------- */
+.a-wrapper{
+  padding: 0 10.625%;
+  margin: 0 auto;
+  padding-top: 100px;
+}
+.artists-area{
+  position: relative;
+  margin-bottom: 25px;
+}
+.a-photo{
+  margin-bottom: 20px;
+}
+.name-group{
+  margin-bottom: 30px;
+}
+.name-group span{
+  display: block;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+}
+.a-ttl{
+  font-size: 1.3rem;
+}
+.a-name{
+  font-size: 3rem;
+}
+.a-ruby{
+  font-size: 1.6rem;
+}
+.a-profile{
+  display: table;
+  width: 100%;
+  border-top: 1px solid var(--black);
+  border-bottom: 1px solid var(--black);
+  margin-bottom: 20px;
+  padding: 2px 0;
+}
+.a-profile div:not(:last-child){
+  border-bottom: 1px solid #9fa0a0;
+}
+dt,dd{
+  display: table-cell;
+  font-size: 1.3rem;
+  line-height: 1.25;
+  letter-spacing: 0.1em;
+  text-align: left;
+  vertical-align: middle;
+  padding: 10px 0;
+}
+.a-profile dt{
+  width: 100px;
+}
+.sns{
+  margin-bottom: 30px;
+}
+.s-icon{
+  display: inline-block;
+}
+.s-icon:not(:last-child){
+  margin-right: 28px;
+}
+.s-icon img{
+  width: auto;
+  height: 28px;
+}
+
+/* アコーディオン
+-------------------------- */
+.biography .accordion {
+	width: 100%;
+}
+.biography{
+  margin-bottom: 40px;
+}
+.index{
+  margin-bottom: 8px;
+}
+.accordion{
+  margin-bottom: 15px;
+}
+.acco-head {
+	background: var(--black);
+	color: #fff;
+	font-size: 1.1rem;
+  letter-spacing: 0.2em;
+	padding: 10px;
+	text-align: left;
+	position: relative;
+	z-index: +1;
+	cursor: pointer;
+	transition-duration: 0.5s;
+  -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+}
+.acco-head:hover {
+	opacity: .8;
+}
+.i-box {
+	position: absolute;
+	top: 50%;
+	right: 8%;
+	width: 11px;
+	height: 11px;
+  -webkit-transform: translateY(-50%)rotate(0deg);
+  transform: translateY(-50%)rotate(0deg);
+	transform-origin: center center;
+	transition-duration: 0.5s;
+}
+.one-i {
+  position: relative;
+	display: block;
+	width: 11px;
+	height: 11px;
+	transform-origin: center center;
+	transition-duration: 0.5s;
+}
+.acco-head.open .i-box {
+	-webkit-transform: translateY(-50%)rotate(-360deg);
+	transform: translateY(-50%)rotate(-360deg);
+}
+.one-i:before, .one-i:after {
+  position: absolute;
+	display: flex;
+	content: '';
+	background-color: #fff;
+	width: 11px;
+	height: 1px;
+	top: 5px;
+	left: 0;
+	-webkit-transform: rotate(360deg);
+	transform: rotate(360deg);
+	transform-origin: center center;
+}
+.one-i:before {
+	width: 1px;
+	height: 11px;
+	top: 0;
+	left: 5px;
+}
+.acco-head.open .i-box .one-i:before {
+	content: none;
+}
+.acco-head.open .i-box .one-i:after {
+	-webkit-transform: rotate(-360deg);
+	transform: rotate(-360deg);
+}
+.acco-inner {
+	display: none;
+  text-align: left;
+	padding: 25px 0 5px;
+}
+.acco-inner li{
+  display: inline-flex;
+  flex-wrap: nowrap;
+  width: 100%;
+}
+.acco-inner li:not(:last-child){
+  margin-bottom: 15px;
+}
+.inner-txt p{
+	font-size: 1.3rem;
+  line-height: 1.4;
+}
+.year, .ch{
+  letter-spacing: 0.05em;
+  margin-right: 18px;
+}
+.year{
+  width: 15px;
+}
+.ch{
+  width: 24px;
+}
+
+/* news
+-------------------------- */
+.gray-area{
+  position: relative;
+  background: var(--background);
+  padding: 0 20px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+.n-content{
+  width: 100%;
+  padding: 28px 0;
+}
+.n-t-group{
+  margin-bottom: 20px;
+}
+.n-title{
+  flex: 1;
+  text-align: left;
+}
+.n-time{
+  display: block;
+  font-size: 1.2rem;
+  letter-spacing: 0.04em;
+  margin-bottom: 6px;
+}
+.title span{
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.25;
+}
+.category{
+  width: 58px;
+  margin-left: 10px;
+  background: var(--black);
+  border-radius: 50%;
+}
+.category span{
+  font-size: 1.2rem;
+  letter-spacing: 0.06em;
+  color: #fff;
+  line-height: 58px;
+}
+.n-disc{
+  font-size: 1.4rem;
+  color: var(--black);
+  opacity: .8;
+  text-align: justify;
+  word-break: break-all;
+}
+.n-disc:not(:last-child){
+  margin-bottom: 20px;
+}
+.n-disc span,.n-disc a{
+  display: block;
+  line-height: 1.5;
+}
+
+
+/* ===================================================== */
+
+/* = TAB ================================================ */
+
+@media screen and (min-width:600px) {
+
+  /* artists
+  -------------------------- */
+  .a-photo{
+    width: 380px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .a-profile{
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  /* アコーディオン
+  -------------------------- */
+  .biography {
+    max-width: 600px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+  }
+  .acco-head {
+    -webkit-clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
+  }
+  .i-box {
+  	right: 5%;
+  }
+
+  /* news
+  -------------------------- */
+  .gray-area{
+    padding: 0 34px;
+  }
+  .n-content{
+    padding: 38px 0;
+  }
+
+}
+
+/* ===================================================== */
+
+/* = PC ================================================ */
+
+@media screen and (min-width:980px) {
+
+  /* artists
+  -------------------------- */
+  .a-wrapper{
+    width: 100%;
+    max-width: 980px;
+    padding: 0 62px;
+    margin: 0 auto;
+  }
+  .artists-area{
+    position: static;
+    margin-top: 116px;
+  }
+  .mini-index{
+    position: static;
+    top: 0;
+    left: 0;
+    transform: translateX(0);
+  }
+  .mini-index-a{
+    display: block;
+    margin-bottom: 28px;
+  }
+  .pc-flex{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  .a-photo{
+    width: 50%;
+    margin-right: 50px;
+    margin-bottom: 0;
+  }
+  .pc-flex-inner{
+    flex: 1;
+  }
+  .name-group span{
+    margin-bottom: 14px;
+  }
+  .a-ttl{
+    font-size: 1.4rem;
+  }
+  .a-name{
+    font-size: 3.4rem;
+  }
+  .a-ruby{
+    font-size: 1.8rem;
+  }
+  .a-profile{
+    margin-bottom: 20px;
+    padding: 2px 0;
+  }
+  dt,dd{
+    font-size: 1.4rem;
+    padding: 12px 0;
+  }
+  .a-profile dt{
+    width: 115px;
+  }
+
+  /* アコーディオン
+  -------------------------- */
+  .biography {
+    margin-bottom: 52px;
+  }
+  .acco-head {
+    font-size: 1.4rem;
+    padding: 13px;
+  }
+  .acco-inner {
+  	padding: 30px 0 15px;
+  }
+  .acco-inner li:not(:last-child){
+    margin-bottom: 20px;
+  }
+  .inner-txt p{
+  	font-size: 1.6rem;
+  }
+  .year{
+    width: 22px;
+  }
+  .ch{
+    width: 32px;
+  }
+
+  /* news
+  -------------------------- */
+  .gray-area{
+    padding: 0 48px;
+    margin-top: 40px;
+  }
+  .mini-index{
+    top: -9px;
+  }
+  .n-content{
+    width: 100%;
+    padding: 48px 0;
+  }
+  .n-t-group{
+    margin-bottom: 22px;
+  }
+  .n-time{
+    font-size: 1.4rem;
+    margin-bottom: 8px;
+  }
+  .title span{
+    font-size: 2rem;
+    line-height: 1.375;
+  }
+  .category{
+    width: 80px;
+  }
+  .category span{
+    font-size: 1.4rem;
+    line-height: 80px;
+  }
+  .n-disc{
+    font-size: 1.6rem;
+  }
+  .n-disc:not(:last-child){
+    margin-bottom: 22px;
+  }
+  .n-disc span,.n-disc a{
+    line-height: 1.6;
+  }
+
+}
+
+/* ===================================================== */

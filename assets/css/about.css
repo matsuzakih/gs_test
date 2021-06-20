@@ -28,11 +28,16 @@
 .n-disc:not(:last-child){
   margin-bottom: 20px;
 }
+
 .n-disc span,.n-disc a{
   display: block;
   line-height: 1.5;
   word-break: break-all;
   white-space: nowrap;
+}
+.tel{
+  display: flex;
+  justify-content: center;
 }
 .disc-r{
   letter-spacing: 0.05em;

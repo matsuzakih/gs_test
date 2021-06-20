@@ -33,7 +33,6 @@
   display: block;
   line-height: 1.5;
   word-break: break-all;
-  white-space: nowrap;
 }
 .tel{
   display: flex;

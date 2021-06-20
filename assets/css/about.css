@@ -24,7 +24,6 @@
 .n-disc{
   font-size: 1.4rem;
   color: var(--black);
-  word-break: break-all;
 }
 .n-disc:not(:last-child){
   margin-bottom: 20px;
@@ -32,6 +31,7 @@
 .n-disc span,.n-disc a{
   display: block;
   line-height: 1.5;
+  word-break: break-all;
 }
 .disc-r{
   letter-spacing: 0.05em;

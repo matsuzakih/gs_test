@@ -231,7 +231,6 @@ dt,dd{
   color: var(--black);
   opacity: .8;
   text-align: justify;
-  word-break: break-all;
 }
 .n-disc:not(:last-child){
   margin-bottom: 20px;
@@ -239,6 +238,7 @@ dt,dd{
 .n-disc span,.n-disc a{
   display: block;
   line-height: 1.5;
+  word-break: break-all;
 }
 
 

@@ -10,13 +10,14 @@
 /* artists
 -------------------------- */
 .a-wrapper{
-  padding: 0 10.625%;
-  margin: 0 auto;
-  padding-top: 100px;
+  width: 78.75%;
+  margin-top: 110px;
+  margin-bottom: 40px;
+  margin-right: auto;
+  margin-left: auto;
 }
 .artists-area{
   position: relative;
-  margin-bottom: 25px;
 }
 .a-photo{
   margin-bottom: 20px;
@@ -70,6 +71,10 @@ dt,dd{
 .s-icon:not(:last-child){
   margin-right: 28px;
 }
+.s-icon.hover {
+  opacity: .6;
+  transition: .3s;
+}
 .s-icon img{
   width: auto;
   height: 28px;
@@ -79,9 +84,6 @@ dt,dd{
 -------------------------- */
 .biography .accordion {
 	width: 100%;
-}
-.biography{
-  margin-bottom: 40px;
 }
 .index{
   margin-bottom: 8px;
@@ -103,7 +105,7 @@ dt,dd{
   -webkit-clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
   clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
 }
-.acco-head:hover {
+.acco-head.hover {
 	opacity: .8;
 }
 .i-box {
@@ -214,13 +216,13 @@ dt,dd{
   font-size: 1.6rem;
   line-height: 1.25;
 }
-.category{
+.tag{
   width: 58px;
   margin-left: 10px;
   background: var(--black);
   border-radius: 50%;
 }
-.category span{
+.tag span{
   font-size: 1.2rem;
   letter-spacing: 0.06em;
   color: #fff;
@@ -266,7 +268,6 @@ dt,dd{
   .biography {
     max-width: 600px;
     margin: 0 auto;
-    margin-bottom: 40px;
   }
   .acco-head {
     -webkit-clip-path: polygon(0% 0%, 97% 0%, 100% 50%, 97% 100%, 0% 100%);
@@ -297,22 +298,21 @@ dt,dd{
   -------------------------- */
   .a-wrapper{
     width: 100%;
+    margin-top: 116px;
+    margin-bottom: 52px;
+  }
+  .artists-area{
+    position: static;
     max-width: 980px;
     padding: 0 62px;
     margin: 0 auto;
   }
-  .artists-area{
+  .mini-index-a{
     position: static;
-    margin-top: 116px;
-  }
-  .mini-index{
-    position: static;
+    display: block;
     top: 0;
     left: 0;
     transform: translateX(0);
-  }
-  .mini-index-a{
-    display: block;
     margin-bottom: 28px;
   }
   .pc-flex{
@@ -352,15 +352,19 @@ dt,dd{
   .a-profile dt{
     width: 115px;
   }
+  .s-icon:hover {
+  	opacity: .6;
+    transition: .3s;
+  }
 
   /* アコーディオン
   -------------------------- */
-  .biography {
-    margin-bottom: 52px;
-  }
   .acco-head {
     font-size: 1.4rem;
     padding: 13px;
+  }
+  .acco-head:hover {
+  	opacity: .8;
   }
   .acco-inner {
   	padding: 30px 0 15px;
@@ -384,7 +388,7 @@ dt,dd{
     padding: 0 48px;
     margin-top: 40px;
   }
-  .mini-index{
+  .mini-index-n{
     top: -9px;
   }
   .n-content{
@@ -402,10 +406,10 @@ dt,dd{
     font-size: 2rem;
     line-height: 1.375;
   }
-  .category{
+  .tag{
     width: 80px;
   }
-  .category span{
+  .tag span{
     font-size: 1.4rem;
     line-height: 80px;
   }

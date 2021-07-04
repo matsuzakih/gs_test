@@ -65,7 +65,9 @@ hr .border{
   width: 78.75%;
   margin: 0 auto;
 }
-
+.news-group .n-content:not(:last-child){
+  border-bottom: 1px solid var(--black);
+}
 
 /* footer
 -------------------------- */
